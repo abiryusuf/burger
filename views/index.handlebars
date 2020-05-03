@@ -1,0 +1,42 @@
+<div class="row">
+    <div class="col-1">
+        {{!-- Space to the left --}}
+    </div>
+
+    {{!-- list of uneaten burgers --}}
+    <div class="col-5">
+        <ul>
+            {{!-- #each is like a forEach... for each uneaten burger, display id, burger name & devour button --}}
+            {{#each burgers}}
+                {{#unless devoured}}
+
+                    <li>
+                        <span class="border border-primary bg-light uneaten-li">{{id}}. {{burger_name}}</span>
+                        <button type="button" class="btn btn-primary uneaten-li-btn" data-id="{{id}}">Devour</button>
+                    </li>
+                {{/unless}}
+            {{!-- /each ends the "foreach" loop --}}
+            {{/each}}
+        </ul>
+    </div>
+
+    <div class="col-1">
+        {{!-- Space in the middle --}}
+    </div>
+
+    {{!-- list of devoured burgers --}}
+    <div class="col-5">
+        <ul>
+            {{!-- #each is like a forEach... for each devoured burger, display burger name --}}
+            {{#each burgers }}
+                {{#if devoured}}
+                <li class="devoured-li">
+                    <span class="border border-primary bg-light devoured-li-elt">{{burger_name}}</span>
+                </li>
+
+                {{/if}}
+            {{/each}}
+        </ul>
+    </div>
+
+</div>

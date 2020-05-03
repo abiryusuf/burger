@@ -1,2 +1,72 @@
 
+/* background of whole website is light blue */
+* {
+    background:  rgb(154, 211, 154)
+}
 
+/* header is centered & has text color of dark blue */
+h1 {
+    padding-top: 10px;
+    color: darkblue;
+    text-align: center;
+}
+
+/* keep the submit button to add a burger close to the input area */
+.add-burger {
+    margin: -10px 10px 10px;
+}
+
+/* no bullets for the lists of burger names */
+ul {
+    list-style: none;
+}
+
+
+li {
+    border-radius: 25%;
+    font-weight: bold;
+}
+
+/* consistent size, borders */
+.uneaten-li, .uneaten-li-btn, .devoured-li-elt {
+    height: 25px;
+    margin: 10px;
+    border-width: 3px;
+    border: darkblue;
+}
+
+.uneaten-li, .devoured-li-elt {
+    font-size: 20px;
+    padding: 5px;
+}
+
+.uneaten-li {
+    color: darkblue;
+}
+
+.uneaten-li-btn {
+    padding: 0px 3px;
+}
+
+.devoured-li {
+    padding-bottom: 15px;
+}
+
+/* subdued list items after eating */
+.devoured-li-elt {
+    color: lightblue;
+    background-color: lightgrey;
+}
+
+/* styling for input box for burger to be added */
+#burg {
+    background-color: beige;
+    color: royalblue;
+}
+
+/* styling for image of burger */
+#burger-pic {
+    height: 150px;
+    margin: auto;
+    padding: 10px;
+}

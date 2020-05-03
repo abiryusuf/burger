@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	{{!-- get bootstrap --}}
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+		integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	{{!-- Need var path = require("path");  and 
+	app.use(express.static(path.join(__dirname, 'public')));  in .js back-end file --}}
+	<link rel="stylesheet" type="text/css" href="assets/css/styles.css">
+	<title>Eat-da-burger!</title>
+	{{!-- Include JQuery --}}
+	<script src="https://code.jquery.com/jquery.js"></script>
+	{{!-- Include front-end js code --}}
+	<script src="/assets/js/burger.js"></script>
+</head>
+
+<div class="row text-center">
+	{{!-- Need var path = require("path");  and 
+	app.use(express.static(path.join(__dirname, 'public')));  in .js back-end file --}}
+	{{!-- Put burger image on top of webpage --}}
+	<img class="center-block" id="burger-pic" src="assets/img/burger.jpg" alt="burger image">
+</div>
+
+<div class="row">
+	<h1 class="col-12">Eat da burger!</h1>
+</div>
+
+<body>
+
+	{{!-- lists of uneaten and devoured burgers are in the handlebars body --}}
+	{{{body}}}
+
+	{{!-- Form to enter new burger name; & submit button --}}
+	<form class="new-burger-form">
+		<div class="form-group row justify-content-center">
+			<div class="col-4 text-center">
+				<input type="text" class="form-control" id="burg" placeholder="(new burger name)" name="called">
+			</div>
+		</div>
+		<div class="col-12 text-center">
+			<button type="submit" class="btn btn-primary row justify-content-center add-burger">Submit</button>
+		</div>
+	</form>
+
+	{{!-- Text to prompt for a new burger name --}}
+	<div class="row justify-content-center">
+		<p>Enter a burger you have a craving for and press "Submit."</p>
+	</div>
+
+</body>
+
+{{!-- Get bootstrap --}}
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+	integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+	crossorigin="anonymous"></script>
+
+</html>
