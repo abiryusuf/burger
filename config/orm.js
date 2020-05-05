@@ -9,7 +9,7 @@ const orm ={
         const queryString = "SELECT * FROM ??;";
         connection.query(queryString, [table], function(err, result){
             if(err) throw err;
-            console.table(result);
+            console.log(result);
 
             //return the result
             cb(result);
@@ -21,7 +21,8 @@ const orm ={
         // ?? 1st is table, ?? is the column names and ? is value
         const queryString = "INSERT INTO ?? (??) VALUES (?);";
         connection.query(queryString, [table, columns, data], function(error, result){
-            if(error) {throw error;}
+            if(error) {throw error;
+            }
             cb(result);
         });
 
