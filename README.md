@@ -3,7 +3,7 @@
 In this Project,creating a burger logger with MySQL, Node, Express, Handlebars and a homemade ORM (yum!). Be sure to follow the MVC design pattern; use Node and MySQL to query and route data in your app, and Handlebars to generate your HTML.
 
 ## heroku
-https://dashboard.heroku.com/apps/eat-da-burgers13
+https://eat-da-burgers13.herokuapp.com/
 
 #### Directory structure
 
