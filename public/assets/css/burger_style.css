@@ -1,13 +1,13 @@
 
 /* background of whole website is light blue */
 * {
-    background:  rgb(154, 211, 154)
+    background:  rgb(162, 211, 162)
 }
 
 /* header is centered & has text color of dark blue */
 h1 {
     padding-top: 10px;
-    color: darkblue;
+    color:rgb(27, 127, 167);
     text-align: center;
 }
 
@@ -32,7 +32,7 @@ li {
     height: 25px;
     margin: 10px;
     border-width: 3px;
-    border: darkblue;
+    border: salmon;
 }
 
 .uneaten-li, .devoured-li-elt {
@@ -41,7 +41,7 @@ li {
 }
 
 .uneaten-li {
-    color: darkblue;
+    color: salmon;
 }
 
 .uneaten-li-btn {
