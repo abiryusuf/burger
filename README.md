@@ -7,10 +7,10 @@ https://eat-da-burgers13.herokuapp.com/
 
 #### Directory structure
 
-All the recommended files and directories from the steps above should look like the following structure:
+All the recommended files and directories from the steps above following structure:
 
 ```
-.
+
 ├── config
 │   ├── connection.js
 │   └── orm.js
